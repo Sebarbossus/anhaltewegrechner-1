@@ -12,5 +12,5 @@ button.addEventListener("click", () => {
     bremsweg = (geschwindigkeit / 10) * (geschwindigkeit / 10);
     reaktionsweg = (geschwindigkeit / 10) * 3;
     anhalteweg = bremsweg + reaktionsweg;
-    output.innerHTML = anhalteweg;
+    output.innerText = anhalteweg;
 });
