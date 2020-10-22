@@ -5,4 +5,20 @@ body {
 #input--anhalteweg {
     display: block;
     margin: 0 auto 10px;
+    min-width: 20%;
+    min-height: 60%;
+    font-size: 45%;
+}
+
+#button--anhalteweg {
+    min-width: 20%;
+    min-height: 60%;
+    font-size: 45%;
+}
+
+@media (max-width: 500px){
+    #input--anhalteweg, #button--anhalteweg {
+        min-width: 30%;
+        font-size: 60%;
+    }
 }
