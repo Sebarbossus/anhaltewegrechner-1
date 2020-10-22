@@ -6,11 +6,13 @@ let geschwindigkeit;
 let bremsweg;
 let reaktionsweg;
 let anhalteweg;
+let anhalteweg_de;
 
 button.addEventListener("click", () => {
     geschwindigkeit = Number(input.value);
     bremsweg = (geschwindigkeit / 10) * (geschwindigkeit / 10);
     reaktionsweg = (geschwindigkeit / 10) * 3;
-    anhalteweg = bremsweg + reaktionsweg;
-    output.innerText = anhalteweg;
+    anhalteweg = `${Math.round((bremsweg + reaktionsweg) * 100) / 100} Metern`;
+    anhalteweg_de = (anhalteweg.replace(".", ","));
+    output.innerText = anhalteweg_de;
 });
